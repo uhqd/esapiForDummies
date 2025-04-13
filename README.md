@@ -20,15 +20,15 @@ Close Visual Studio if it is open. You will open it, during the next following s
 Now you are ready to start. Let's see two easy way to say Hello with a simple script in Eclipse: from github and using the wizard. Try both in the following order. 
 
 ##  2. Install and execute your first script from a github repository
-### Cloning a repo
+### Cloning a repo (if you do not know github)
 Find a github repository (repo) containing an ESAPI script, made by other users that you want to try.
 On the repository github page, click on the button **CODE** and copy the https link 
 
 On your computer, create an empty directory. This directory must be available from your Eclipse Station (to be executed).
 
-Open Visual Studio and select from the Start Window: "Cloning a project". A window is displayed
+Open Visual Studio and select from the first Window: "Cloning a project". A window is displayed
 
-Paste the *https link* to the repo in the first field and the complete path to your empty directory (the project will be downloaded in this directory), then click **ok**
+Paste in the first field the *https link* and in the second field, the complete path to your empty directory (the project will be downloaded in this directory), then click **ok**
 
 
 Close Visual Studio.
@@ -36,14 +36,14 @@ Close Visual Studio.
 If you take a look on the directory, you will find several downloaded files/dir. You do not need to understand what are these files for the moment.
 One of this file is .sln file (Visual Studio Solution)
 ### Building your project
-Double click on this .sln file to open it on Visual Studio
+Double click on this .sln file to open it on Visual Studio. 
 Here, you may have (or not) to do the following operations. On the Visual Studio (VS) right panel (Solution Explorer) you will find a list of references (some needed files to execute your script)
 
 Find the 2 reference files VMS.TPS.Common.Model.API and VMS.TPS.Common.Model.Types
 
 They are provided by VARIAN to access the information you can get and the actions you can do in Eclipse from your script.
 
-If you are lucky you have the good ones for your Eclipse version (and you have nothing to do)
+If you are lucky you have the good version of these files for your Eclipse version (and you have nothing to do)
 
 If a yellow danger triangle is drawn on these files you have to change them: 
 - right click on them and remove them
@@ -56,7 +56,12 @@ C:\Program Files(x86)\Varian\RTM\15.6\esapi\API\VMS.TPS.Common.Model.Types
 
 Once it is done, you can build you solution 
 
-On the Menu bar, select Solution, then Generate Solution
+On the Menu bar, select **Solution**, then **Generate Solution**
+
+Visual Studio is building your project and in the output window (bootom) it writes where is created your final product the .esapi.dll file. 
+
+You can test in Eclipse: select **Tools**, then **Scripts**, then change directory to select the direcory where your .esapi.dll is (Please notice that Eclipse does not ask you to select directly the .esapi.dll file but the directory that contains it). Once you have choose the correct directrory, select you "plugin" (the .esapi.dll)  and Execute it.
+
 
 
 
