@@ -11,7 +11,7 @@ First install on your computer (Windows) a free version of Visual Studio. I reco
 
 **Important**: during installation, select the installation of .NET option. This operation should last 2-5 minutes. 
 
-**Important**: DO NOT INSTAL VISUAL STUDIO CODE, but Visual Studio (it is a different product)
+**Important**: DO NOT INSTALL VISUAL STUDIO CODE, but Visual Studio (it is a different product)
 
 Visual Studio is the perfect application to develop your scripts. 
 
