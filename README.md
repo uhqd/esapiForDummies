@@ -1,10 +1,11 @@
 # ESAPI For Dummies
 
-This is a very simple introduction for very beginners: how to start step by step a Varian Eclipse Script (ESAPI)
+This is a very simple introduction for very beginners: how to start step by step a Varian Eclipse Script (ESAPI).
+
 ESAPI scripts allow to automatize routine tasks in Varian Eclipse (Treatment Planification module)
 This repository only contains this README file. It should help very beginners to start their first script ESAPI for VARIAN Eclipse.
 I tried to make it as simple and as short as possible.
-If this first step is understood, readers will be able to download and try all the script available from my github account (or other users)
+If this first step is understood, readers will be able to download and try all the script available from my github account (or other users).
 
 ## 1. Install Visual Studio
 First install on your computer (Windows) a free version of Visual Studio. I recommend  [Visual Studio Community 2022](https://visualstudio.microsoft.com/fr/vs/community/)
@@ -32,7 +33,7 @@ On the repository github page, click on the button **CODE** and copy the https l
 
 On your computer, create an empty directory. This directory must be visible from your Eclipse Station (to be executed).
 
-Open Visual Studio and select from the first Window: "Cloning a repository" (I trnslate the french version, so messages can be slightly different). A window is displayed
+Open Visual Studio and select from the first Window: "Cloning a repository" (I translate the french version, so messages can be slightly different). A window is displayed
 
 Paste in the first field the *https link* and in the second field, the complete path to your empty directory (the project will be downloaded in this directory), then click **Clone**
 
@@ -58,7 +59,7 @@ Find the 2 reference files VMS.TPS.Common.Model.API and VMS.TPS.Common.Model.Typ
 
 They are provided by VARIAN to access the information you can get and the actions you can do in Eclipse from your script.
 
-If you are lucky you have the good version of these files for your Eclipse version (and you have nothing to do)
+If you are lucky, you have the good version of these files for your Eclipse version (and you have nothing to do)
 
 
 
@@ -76,9 +77,12 @@ Once it is done, you can build you solution
 
 On the Menu bar, select **Generate**, then **Generate Solution**
 
-Visual Studio is building your project and in the output window (bootom) it writes where is created your final product the .esapi.dll file. 
+Visual Studio is building your project and in the output window (bootom) it writes where is created your final product the .esapi.dll file.
 
-You can test in Eclipse: select **Tools**, then **Scripts**, then change directory to select the direcory where your .esapi.dll is (Please notice that Eclipse does not ask you to select directly the .esapi.dll file but the directory that contains it).
+### Test execution in Eclipse
+You can test in Eclipse: 
+- Load a plan
+- select **Tools**, then **Scripts**, then **Change directory** to select the directory where your .esapi.dll is (Please notice that Eclipse does not ask you to select directly the .esapi.dll file but the directory that contains it).
 
 Once you have choose the correct directrory, select you "plugin" (the .esapi.dll)  and Execute it.
 
@@ -86,17 +90,17 @@ Eclipse should say you hello!
 
 ### Modify your script
 If you want to modify the script, please follow the following steps : 
- - modify the code
- - if you have executed at least once the esapi.dll in Eclipse you have to change the assembly name:
-* Go in the menu bar to Project --> Properties and change the assmbly name.
-* It is recommended to use a name like test_0000.esapi because you will have to change it after each test in Eclipse
-  - Generate the solution
-  - Test in Eclipse
+- modify the code
+- if you have executed at least once the esapi.dll in Eclipse you have to change the assembly name:
+    * Go in the menu bar to Project --> Properties and change the assmbly name.
+    * It is recommended to use a name like test_0000.esapi because you will have to change it after each test in Eclipse
+- Generate the solution
+- Test in Eclipse
 
 
 
 
-##  2. Install and execute your first script using the Varian Wizard
+##  3. Install and execute your first script using the Varian Wizard
 On a Eclipse Station, in the START menu of Windows, find the **Eclipse Script Wizzard** (it should be in the VARIAN directory).
 
 The wizzard is able to generate an empty project to start scripting very easily.
@@ -115,15 +119,14 @@ When starting the Wizzard you have to choose:
 When clicking ok, the wizard will generate a set of files in the empty directory. It proposes to open VS, say no.
 
 Please follow carefully the following instructions in this order:
-- double clic on the .csproj file  (this should be in *your directrory*/Projects/*your project name*
-- it opens Visual Studio
+- double clic on the .csproj file  (this should be in *your directrory*/Projects/*your project name*) to open Visual Studio
 - On the right panel, check if the 2 dll (VMS.TPS...) are correct. To change them, see the prvious subsection **Changing ESAPI dlls**
 - On the right panel, double click on the .cs file to display it (the place you start scripting)
 - You can add your code after the comment line // TODO : Add.... For exemple : 
 
 <img src="4.png" width="800" align="center">
-     
- - Click on Generate then Generate Solution and close Visual Studio. You will be asked to save your .sln file. Accept the proposed path. 
+ - a tip: if you sart to type **context.Patient.** you will have access to the loaded patient information. **context.Plansetup.** is the loaded plan... Etc. Your travel starts here. 
+ - Click on **Generate** then **Generate Solution** and close **Visual Studio**. You will be asked to save your .sln file. Accept the proposed path. 
  - a .sln solution will appear in the directory Projects/
  - Double click on the .sln file to open VS again
  - Recommended: rename your files, project, solution, using a right click + **rename** in the Solution Explorer on the corresponding items.
@@ -131,6 +134,15 @@ Please follow carefully the following instructions in this order:
 
 
 
+##  4. Hello world and so what? 
+If you are confortable with this Hello World, you are going to learn very fast. This tutorial is stopping here but you can find ellaborate scripts at the following links. Clone and test them to learn how they are made. 
+
+* [My uhqd github account](https://github.com/uhqd): Have a regular look to my account, I put sometimes new public repositories. I recommend you to have a look to DoseHunter and Plancheck
+* [VarianApi](https://github.com/VarianAPIs/Varian-Code-Samples): A lot of useful tools.
+* [FX github account](https://github.com/fxarnaud?tab=repositories): Great tools from my colleague
+* Finally, for beginners, do not hesitate to ask question on this [reddit page](https://www.reddit.com/r/esapi/). Quick Answers, nice people.
+
+Enjoy!!
 
 
 
