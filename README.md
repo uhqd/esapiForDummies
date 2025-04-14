@@ -30,7 +30,7 @@ In this example, we will take a very simple public repo: [https://github.com/uhq
 On the repository github page, click on the button **CODE** and copy the https link. In our example: https://github.com/uhqd/helloWorld.git
 
 
-On your computer, create an empty directory. This directory must be available from your Eclipse Station (to be executed).
+On your computer, create an empty directory. This directory must be visible from your Eclipse Station (to be executed).
 
 Open Visual Studio and select from the first Window: "Cloning a repository" (I trnslate the french version, so messages can be slightly different). A window is displayed
 
@@ -62,7 +62,7 @@ If you are lucky you have the good version of these files for your Eclipse versi
 
 
 
-
+### Changing ESAPI dlls
 If a yellow danger triangle is drawn on these files you have to change them: 
 - right click on them and delete them
 - right click on **references** and "add references..." and browse your computer to find the correct references.
@@ -84,14 +84,39 @@ Once you have choose the correct directrory, select you "plugin" (the .esapi.dll
 
 Eclipse should say you hello!
 
-
+### Modify your script
 If you want to modify the script, please follow the following steps : 
 
 
 
 
 ##  2. Install and execute your first script using the Varian Wizard
-On a Eclipse Station, in the START menu of windows, find the Wizzard (it should be in the VARIAN directory).
+On a Eclipse Station, in the START menu of Windows, find the **Eclipse Script Wizzard** (it should be in the VARIAN directory).
+
+The wizzard is able to generate an empty project to start scripting very easily.
+
+
+When starting the Wizzard you have to choose:
+- an empty directory to start your project (this directory must be visible from your Eclipse Station, to be executed).
+- a name of the project
+- a type of Script. I only detail here 3 types of these proposed scripts :
+  * Binary plugin: the general recommanded type to make an ellaborated scrit. The previous [example](https://github.com/uhqd/helloWorld) is a binary plugin script. For this tutorial, please select this type.
+  * Single file plugin: a simple project with only one .cs file (for simple project). This type doesnt require any compilation or solution building.
+  * stand alone script. This type of script can be executed on a Eclipse Station, without opening ARIA. You can find a documented example of this script here: [Dose Hunter](https://github.com/uhqd/DoseHunter.git)
+
+
+
+When clicking ok, the wizard will generate a set of files in the empty directory. It proposes to open VS, say no.
+
+Please follow carefully the following instructions in this order:
+- double clic on the .csproj file  (this should be in *your directrory*/Projects/*your project name*
+- it opens Visual Studio
+- On the right panel, check if the 2 dll (VMS.TPS...) are correct. To change them, see the prvious subsection **Changing ESAPI dlls**
+- On the right panel, double click on the .cs file to display it (the place you start scripting)
+- You can add your code after the comment line // TODO : Add.... For exemple : 
+
+
+     
 
 
 
