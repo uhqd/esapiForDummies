@@ -1,6 +1,6 @@
 # ESAPI For Dummies
 
-This is a very simple introduction for very beginners: how to start step by step a Varian Eclipse Script (ESAPI).
+This is a very simple introduction for complete beginners: how to start step by step a Varian Eclipse Script (ESAPI).
 
 ESAPI scripts allow to automatize routine tasks in Varian Eclipse (Treatment Planification module)
 This repository only contains this README file. It should help very beginners to start their first script ESAPI for VARIAN Eclipse.
