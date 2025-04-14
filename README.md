@@ -11,7 +11,7 @@ First install on your computer (Windows) a free version of Visual Studio. I reco
 
 **Important**: during installation, select the installation of .NET option. This operation should last 2-5 minutes. 
 
-**Important**: DO NOT INSTALL VISUAL STUDIO CODE, but Visual Studio (it is a different product)
+**Important**: DO NOT INSTALL **VISUAL STUDIO CODE**, but Visual Studio (it is a different product)
 
 Visual Studio is the perfect application to develop your scripts. 
 
@@ -22,14 +22,17 @@ Now you are ready to start. Let's see two easy way to say Hello with a simple sc
 ##  2. Install and execute your first script from a github repository
 ### Cloning a repo (if you do not know github)
 Find a github repository (repo) containing an ESAPI script, made by other users that you want to try.
-On the repository github page, click on the button **CODE** and copy the https link 
+In this example, we will take a very simple public repo: [https://github.com/uhqd/helloWorld](https://github.com/uhqd/helloWorld)
+
+On the repository github page, click on the button **CODE** and copy the https link. In our example: https://github.com/uhqd/helloWorld.git
+
 
 On your computer, create an empty directory. This directory must be available from your Eclipse Station (to be executed).
 
-Open Visual Studio and select from the first Window: "Cloning a project". A window is displayed
+Open Visual Studio and select from the first Window: "Cloning a repository" (I trnslate the french version, so messages can be slightly different). A window is displayed
 
-Paste in the first field the *https link* and in the second field, the complete path to your empty directory (the project will be downloaded in this directory), then click **ok**
-
+Paste in the first field the *https link* and in the second field, the complete path to your empty directory (the project will be downloaded in this directory), then click **Clone**
+<img src="1" width="500" align="center">
 
 Close Visual Studio.
 
