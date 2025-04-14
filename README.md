@@ -3,7 +3,7 @@
 This is a very simple introduction for complete beginners: how to start step by step a Varian Eclipse Script (ESAPI).
 
 ESAPI scripts allow to automatize routine tasks in Varian Eclipse (Treatment Planification module)
-This repository only contains this README file. It should help very beginners to start their first script ESAPI for VARIAN Eclipse.
+This repository only contains this README file. It should help beginners to start their first script ESAPI for VARIAN Eclipse.
 I tried to make it as simple and as short as possible.
 If this first step is understood, readers will be able to download and try all the script available from my github account (or other users).
 
