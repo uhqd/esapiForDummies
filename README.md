@@ -86,6 +86,12 @@ Eclipse should say you hello!
 
 ### Modify your script
 If you want to modify the script, please follow the following steps : 
+ - modify the code
+ - if you have executed at least once the esapi.dll in Eclipse you have to change the assembly name:
+* Go in the menu bar to Project --> Properties and change the assmbly name.
+* It is recommended to use a name like test_0000.esapi because you will have to change it after each test in Eclipse
+  - Generate the solution
+  - Test in Eclipse
 
 
 
@@ -115,8 +121,14 @@ Please follow carefully the following instructions in this order:
 - On the right panel, double click on the .cs file to display it (the place you start scripting)
 - You can add your code after the comment line // TODO : Add.... For exemple : 
 
-
+<img src="4.png" width="800" align="center">
      
+ - Click on Generate then Generate Solution and close Visual Studio. You will be asked to save your .sln file. Accept the proposed path. 
+ - a .sln solution will appear in the directory Projects/
+ - Double click on the .sln file to open VS again
+ - Recommended: rename your files, project, solution, using a right click + **rename** in the Solution Explorer on the corresponding items.
+ - Modify your script and regenerate solution as explained before in the section **Modify your script**
+
 
 
 
