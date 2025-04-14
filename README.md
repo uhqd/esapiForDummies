@@ -9,7 +9,10 @@ If this first step is understood, readers will be able to download and try all t
 ## 1. Install Visual Studio
 First install on your computer (Windows) a free version of Visual Studio. I recommend  [Visual Studio Community 2022](https://visualstudio.microsoft.com/fr/vs/community/)
 
-**Important**: during installation, select the installation of .NET option. This operation should last 2-5 minutes. 
+**Important**: during installation, select the installation of **.NET Desktop** option. This operation should last 2-5 minutes. 
+
+<img src="3.png" width="800" align="center">
+
 
 **Important**: DO NOT INSTALL **VISUAL STUDIO CODE**, but Visual Studio (it is a different product)
 
@@ -82,8 +85,13 @@ Once you have choose the correct directrory, select you "plugin" (the .esapi.dll
 Eclipse should say you hello!
 
 
+If you want to modify the script, please follow the following steps : 
+
+
+
+
 ##  2. Install and execute your first script using the Varian Wizard
-On a Eclipse Station, in the START menu of windows, find the Wizzard (it should be in the VARIAN directory)
+On a Eclipse Station, in the START menu of windows, find the Wizzard (it should be in the VARIAN directory).
 
 
 
