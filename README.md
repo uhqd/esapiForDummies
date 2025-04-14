@@ -84,7 +84,7 @@ You can test in Eclipse:
 - Load a plan
 - select **Tools**, then **Scripts**, then **Change directory** to select the directory where your .esapi.dll is (Please notice that Eclipse does not ask you to select directly the .esapi.dll file but the directory that contains it).
 
-Once you have choose the correct directrory, select you "plugin" (the .esapi.dll)  and Execute it.
+Once you have choose the correct directrory, select your "plugin" (the .esapi.dll)  and Execute it.
 
 Eclipse should say you hello!
 
@@ -125,6 +125,7 @@ Please follow carefully the following instructions in this order:
 - You can add your code after the comment line // TODO : Add.... For exemple : 
 
 <img src="4.png" width="800" align="center">
+
  - a tip: if you sart to type **context.Patient.** you will have access to the loaded patient information. **context.Plansetup.** is the loaded plan... Etc. Your travel starts here. 
  - Click on **Generate** then **Generate Solution** and close **Visual Studio**. You will be asked to save your .sln file. Accept the proposed path. 
  - a .sln solution will appear in the directory Projects/
